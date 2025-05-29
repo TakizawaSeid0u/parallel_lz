@@ -6,7 +6,7 @@ from random import randint
 def task(id):
     lst = [randint(-10, 10) for i in range(100)] 
     with open(f'file{id}.txt', 'w') as f:
-        f.writelines(lst)
+        f.writelines(str(lst))
 
 
 start_time = perf_counter()
